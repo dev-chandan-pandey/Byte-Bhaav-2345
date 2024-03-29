@@ -1,3 +1,4 @@
+
 /* eslint-disable linebreak-style */
 const jwt = require("jsonwebtoken")
 const { blacklist } = require("../blacklist")
@@ -18,9 +19,11 @@ const auth = (req, res, next) => {
 		}
 	} else {
 		res.json({ msg: "You are not Authorised" })
-	}
+
 }
 
 module.exports = {
+
 	auth,
 }
+

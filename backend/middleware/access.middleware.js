@@ -1,3 +1,4 @@
+
 /* eslint-disable linebreak-style */
 /* eslint-disable no-mixed-spaces-and-tabs */
 const { UserModel } = require("../model/user.model")
@@ -20,3 +21,4 @@ const access= (...permittedRoles)=>{
 module.exports={
 	access
 }
+
