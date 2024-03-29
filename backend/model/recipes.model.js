@@ -12,6 +12,11 @@ const recipeSchema = new Schema(
 			type: String,
 			required: true,
 		},
+		req_membership: {
+			type: String,
+			enum: ["regular", "silver", "premium"],
+			default: "regular",
+		},
 		description: {
 			type: String,
 			required: true,

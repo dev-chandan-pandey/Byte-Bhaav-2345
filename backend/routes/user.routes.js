@@ -8,7 +8,7 @@ const { blacklist } = require("../blacklist")
 const userRouter = express.Router()
 
 userRouter.post("/register", (req, res) => {
-	const { username, email, pass ,role} = req.body
+	const { username, email, pass ,role,membership} = req.body
 	try {
 		bcrypt.hash(pass, 5, async (err, hash) => {
 			if (err) {
@@ -18,7 +18,8 @@ userRouter.post("/register", (req, res) => {
 					username,
 					email,
 					pass: hash,
-					role
+					role,
+					membership
 				})
 				await user.save()
 				res.status(200).json({ msg: "The new user has been registered!" })
@@ -37,7 +38,7 @@ userRouter.post("/login", async (req, res) => {
 			bcrypt.compare(pass, user.pass, (err, result) => {
 				if (result) {
 					const token = jwt.sign({ userID: user._id }, "masai")
-					res.status(200).json({ msg: "Login Successful!", token })
+					res.status(200).json({ msg: "Login Successful!", token ,"username":user.username,"role":user.role,"membership":user.membership})
 				} else {
 					res.status(200).json({ msg: "Password does not match" })
 				}

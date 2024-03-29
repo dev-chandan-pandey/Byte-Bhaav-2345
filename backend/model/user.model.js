@@ -11,6 +11,11 @@ const userSchema = mongoose.Schema(
 			enum: ["customer", "admin"],
 			default: "customer",
 		},
+		membership:{
+			type:String,
+			enum:["regular","silver","premium"],
+			default:"regular"
+		}
 	},
 	{
 		versionKey: false,
