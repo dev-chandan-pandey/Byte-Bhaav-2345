@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import { Link } from "react-router-dom";
 function Navbar() {
   const [sticky,setSticky] = useState(false);
   useEffect(()=>{
@@ -26,12 +26,25 @@ function Navbar() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-      <li className="text-lg"><a>Home</a></li>
-      <li className="text-lg"><a>Menu</a></li>
-      <li className="text-lg"><a>Shop</a></li>
-      <li className="text-lg"><a>Blog</a></li>
-      <li className="text-lg"><a>About</a></li>
-      <li className="text-lg"><a>Contact</a></li>
+      <li className="text-lg">
+                  
+      <Link to="/">Home</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/recipes">menu</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/recipes">menu</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/blog">blog</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/about">About Us</Link>  
+    </li>
+    <li className="text-lg">
+    <Link to="/contact">Contact Us</Link>
+    </li>
       </ul>
     </div>
     <a className=" text-2xl font-bold cursor-pointer">DelightDish</a>
@@ -40,11 +53,24 @@ function Navbar() {
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 space-x-6">
     <li className="text-lg"><a>Home</a></li>
-      <li className="text-lg"><a>Menu</a></li>
-      <li className="text-lg"><a>Shop</a></li>
-      <li className="text-lg"><a>Blog</a></li>
-      <li className="text-lg"><a>About</a></li>
-      <li className="text-lg"><a>Contact</a></li>
+    <li className="text-lg">
+    <Link to="/">Home</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/recipes">menu</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/shop">shop</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/blog">blog</Link>
+    </li>
+    <li className="text-lg">
+    <Link to="/about">About Us</Link>  
+    </li>
+    <li className="text-lg">
+    <Link to="/contact">Contact Us</Link>
+    </li>
     </ul>
   </div>
   <div className='navbar-end space-x-3'>
