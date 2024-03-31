@@ -6,8 +6,9 @@ const { auth } = require("./middleware/auth.middleware")
 const { RecipeRouter } = require("./routes/recipe.routes")
 const { postRouter } = require("./routes/post.routes")
 const { postCommentRouter } = require("./routes/post_comment.routes")
-
+const cors = require("cors")
 const app = express()
+app.use(cors())
 app.use(express.json())
 app.use("/users", userRouter)
 

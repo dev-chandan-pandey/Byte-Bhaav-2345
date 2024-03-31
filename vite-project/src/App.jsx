@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Recipes from "./pages/Recipes.jsx";
 import Footer from "./components/Footer.jsx";
+import Login from "./pages/Login.jsx";
 import Contact from "./pages/Contact.jsx";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route  path={"/about"} element={<About/>}></Route>
         <Route  path={"/contact"} element={<Contact/>}></Route>
         <Route  path={"/recipes"} element={<Recipes/>}></Route>
+        <Route exact path={"/login"} element={<Login/>}></Route>
       </Routes>
       <Footer />
     </Router>
