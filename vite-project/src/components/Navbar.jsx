@@ -73,7 +73,8 @@ function Navbar() {
   <div className='navbar-end space-x-3'>
   <Link to={"/login"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</Link>
     {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</a> */}
-    <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</a>
+    <Link to={"/signup"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</Link>
+    {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</a> */}
   </div>
   
   

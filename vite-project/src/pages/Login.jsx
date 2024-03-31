@@ -21,6 +21,13 @@ const Login = () => {
 
     return (
         <Box
+        style={{
+            backgroundImage: `url('https://raw.githubusercontent.com/VishnurajKarockal/Resources/main/byte-bhaav-unit6-project-recipe_images/katie-smith-uQs1802D0CQ-unsplash.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }}
+        >
+            <Box
             width={{ base: '100%', md: '80%', lg: "60%" }}
             margin="auto"
             display="flex"
@@ -28,6 +35,7 @@ const Login = () => {
             alignItems="center"
             justifyContent="center"
             minHeight="100vh"
+            
         >
             <Box
                 borderWidth="1px"
@@ -53,6 +61,7 @@ const Login = () => {
                     Login
                 </Button>
             </Box>
+        </Box>
         </Box>
     );
 };
