@@ -7,6 +7,7 @@ import Recipes from "./pages/Recipes.jsx";
 import Footer from "./components/Footer.jsx";
 import Login from "./pages/Login.jsx";
 import Contact from "./pages/Contact.jsx";
+import Signup from "./pages/SignUp.jsx";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route  path={"/contact"} element={<Contact/>}></Route>
         <Route  path={"/recipes"} element={<Recipes/>}></Route>
         <Route exact path={"/login"} element={<Login/>}></Route>
+        <Route exact path={"/signup"} element={<Signup/>}></Route>
       </Routes>
       <Footer />
     </Router>
