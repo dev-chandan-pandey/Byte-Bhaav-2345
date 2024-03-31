@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 
 // require('dotenv').config()
 // const apiUrl = import.meta.env.API_BASE_URL;
@@ -10,11 +11,12 @@ import SingleRecipe from '../components/SingleRecipe';
 function Recipes() {
    const [data,setState] = useState([])
    useEffect(() => {
+	const token = localStorage.getItem('token');
 		const fetchFood = async () => {
 			try {
 				const data = await axios.get(`${API_BASE_URL}/recipes/`,{
 					headers: {
-					  'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NjA2Nzg2YzI3MTdjZjExYzVkNjU4MmUiLCJpYXQiOjE3MTE4MDc3Mjd9.FLV0D8YY1ZuWW3sJlvP4xceMChWQhxVZIIo60z4Yy-g`
+					  'Authorization': `Bearer ${token}`
 					}
 			});
 			   setState(data.data.recipes)

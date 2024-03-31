@@ -1,0 +1,31 @@
+.home-container {
+    width: 90%;
+    margin: auto;
+}
+.first-section-heading {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.first-section-first>:nth-child(1){
+    font-size: 80px;
+    font-weight: bold;
+}
+.first-section-first>:nth-child(2){
+    font-size: 45px;
+    text-align: center;
+}
+.first-section-first>:nth-child(3){
+    text-align: center;
+}
+.crusted {
+  height: 450px;
+  width: 450px;
+  border: 1px solid black;
+}
