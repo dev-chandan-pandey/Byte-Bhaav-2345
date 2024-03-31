@@ -31,13 +31,11 @@ function Navbar() {
       <Link to="/">Home</Link>
     </li>
     <li className="text-lg">
-    <Link to="/recipes">menu</Link>
+    <Link to="/recipes">Menu</Link>
     </li>
+  
     <li className="text-lg">
-    <Link to="/recipes">menu</Link>
-    </li>
-    <li className="text-lg">
-    <Link to="/blog">blog</Link>
+    <Link to="/blog">Blog</Link>
     </li>
     <li className="text-lg">
     <Link to="/about">About Us</Link>  
@@ -52,18 +50,17 @@ function Navbar() {
  
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 space-x-6">
-    <li className="text-lg"><a>Home</a></li>
     <li className="text-lg">
     <Link to="/">Home</Link>
     </li>
     <li className="text-lg">
-    <Link to="/recipes">menu</Link>
+    <Link to="/recipes">Menu</Link>
     </li>
     <li className="text-lg">
-    <Link to="/shop">shop</Link>
+    <Link to="/shop">Shop</Link>
     </li>
     <li className="text-lg">
-    <Link to="/blog">blog</Link>
+    <Link to="/blog">Blog</Link>
     </li>
     <li className="text-lg">
     <Link to="/about">About Us</Link>  
