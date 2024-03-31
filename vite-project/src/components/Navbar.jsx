@@ -18,7 +18,7 @@ function Navbar() {
   },[])
   return (
     <>
-     <div className={`max-w-screen-2xl container max-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${sticky?"sticky-navbar shadow-md bg-base-300 duration-300 transition-all ease-in-out":""}`}>
+     <div className={`max-w-screen-2xl container max-auto md:px-20 px-4 fixed top-0 left-0 right-0 bg-base-300  ${sticky?"sticky-navbar shadow-md bg-base-300 duration-300 transition-all ease-in-out":""}`} style ={{ zIndex: 1000 }}>
      <div className="navbar ">
   <div className="navbar-start">
     <div className="dropdown">
