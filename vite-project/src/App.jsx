@@ -7,6 +7,7 @@ import Contect from "./pages/Contect.jsx";
 import Recipes from "./pages/Recipes.jsx";
 import Banner from "./components/Banner.jsx";
 import Footer from "./components/Footer.jsx";
+import Login from "./pages/Login.jsx";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route exact path={"/about"} element={<About/>}></Route>
         <Route exact path={"/contact"} element={<Contect/>}></Route>
         <Route exact path={"/recipes"} element={<Recipes/>}></Route>
+        <Route exact path={"/login"} element={<Login/>}></Route>
       </Routes>
       <Banner />
       <Footer />
