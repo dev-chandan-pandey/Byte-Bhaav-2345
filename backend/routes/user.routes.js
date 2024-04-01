@@ -8,7 +8,7 @@ const { blacklist } = require("../blacklist")
 const userRouter = express.Router()
 
 userRouter.post("/register", (req, res) => {
-	const { username, email, pass ,role,membership} = req.body
+	const { username, email, pass, role, membership } = req.body
 	try {
 		bcrypt.hash(pass, 5, async (err, hash) => {
 			if (err) {
@@ -19,7 +19,7 @@ userRouter.post("/register", (req, res) => {
 					email,
 					pass: hash,
 					role,
-					membership
+					membership,
 				})
 				await user.save()
 				res.status(200).json({ msg: "The new user has been registered!" })
@@ -33,13 +33,21 @@ userRouter.post("/register", (req, res) => {
 userRouter.post("/login", async (req, res) => {
 	const { email, pass } = req.body
 	try {
-		
-		const user = await UserModel.findOne({email})
+		const user = await UserModel.findOne({ email })
 		if (user) {
 			bcrypt.compare(pass, user.pass, (err, result) => {
 				if (result) {
 					const token = jwt.sign({ userID: user._id }, "masai")
-					res.status(200).json({ msg: "Login Successful!", token ,"username":user.username,"role":user.role,"membership":user.membership})
+					res
+						.status(200)
+						.json({
+							msg: "Login Successful!",
+							token,
+							username: user.username,
+							role: user.role,
+							membership: user.membership,
+							email: user.email,
+						})
 				} else {
 					res.status(200).json({ msg: "Password does not match" })
 				}
@@ -52,23 +60,20 @@ userRouter.post("/login", async (req, res) => {
 	}
 })
 
-
-userRouter.get("/logout",(req,res) => {
+userRouter.get("/logout", (req, res) => {
 	const token = req.headers.authorization?.split(" ")[1]
 	try {
-		if(token){
+		if (token) {
 			blacklist.push(token)
-			res.status(200).json({msg:"Logged out successfully"})
-		}else{
-			res.status(200).json({msg:"Please pass the token"})
+			res.status(200).json({ msg: "Logged out successfully" })
+		} else {
+			res.status(200).json({ msg: "Please pass the token" })
 		}
 	} catch (error) {
-		res.status(400).json({error})
+		res.status(400).json({ error })
 	}
 })
-
 
 module.exports = {
 	userRouter,
 }
-
