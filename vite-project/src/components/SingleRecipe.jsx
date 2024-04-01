@@ -62,8 +62,8 @@ function SingleRecipe({ food }) {
             name="rating-3"
             className={
               food.rating >= 2
-                ? "mask mask-heart bg-red-400"
-                : "mask mask-heart bg-white-100"
+                ? "mask mask-star bg-red-400"
+                : "mask mask-star bg-white-100"
             }
             checked={food.rating > +2}
           />
@@ -72,8 +72,8 @@ function SingleRecipe({ food }) {
             name="rating-3"
             className={
               food.rating >= 3
-                ? "mask mask-heart bg-orange-400"
-                : "mask mask-heart bg-white-100"
+                ? "mask mask-star bg-orange-400"
+                : "mask mask-star bg-white-100"
             }
             checked={food.rating > +3}
           />
@@ -82,8 +82,8 @@ function SingleRecipe({ food }) {
             name="rating-3"
             className={
               food.rating >= 4
-                ? "mask mask-heart bg-yellow-400"
-                : "mask mask-heart bg-white-100"
+                ? "mask mask-star bg-yellow-400"
+                : "mask mask-star bg-white-100"
             }
             checked={food.rating > +4}
           />
@@ -92,8 +92,8 @@ function SingleRecipe({ food }) {
             name="rating-3"
             className={
               food.rating >= 5
-                ? "mask mask-heart bg-lime-400"
-                : "mask mask-heart bg-white-100"
+                ? "mask mask-star bg-lime-400"
+                : "mask mask-star bg-white-100"
             }
             checked={food.rating > +5}
           />
@@ -102,8 +102,8 @@ function SingleRecipe({ food }) {
             name="rating-3"
             className={
               food.rating >= 6
-                ? "mask mask-heart bg-green-400"
-                : "mask mask-heart bg-white-100"
+                ? "mask mask-star bg-green-400"
+                : "mask mask-star bg-white-100"
             }
             checked={food.rating > +6}
           />
