@@ -1,0 +1,36 @@
+.contact-container {
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.contact-first-section{
+    display: flex;
+    justify-content: space-around;
+   align-items: baseline;
+}
+.get-in-touch {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact-us-1>:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact-us-2>:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact-second-section{
+    margin: auto;
+}
