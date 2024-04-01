@@ -6,10 +6,14 @@ const { RecipeModel } = require("../model/recipes.model");
 const { auth } = require("../middleware/auth.middleware");
 const { access } = require("../middleware/access.middleware");
 const { UserModel } = require("../model/user.model");
-
+// const cloudinary = require("cloudinary").v2
 const RecipeRouter = express.Router();
 RecipeRouter.use(express.json());
-
+// cloudinary.config({
+// 	cloud_name: "your_cloud_name",
+// 	api_key: "your_api_key",
+// 	api_secret: "your_api_secret"
+// });
 // user having admin role can add new recipes
 RecipeRouter.post("/register", auth, access("admin"), async (req, res) => {
 	const {

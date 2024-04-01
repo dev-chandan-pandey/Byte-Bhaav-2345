@@ -11,6 +11,10 @@ const Login = () => {
             const res = await axios.post(`http://localhost:8080/users/login`, { email, pass });
             if (res.data.token) {
                 localStorage.setItem('token', res.data.token);
+                localStorage.setItem('username',res.data.username);
+                localStorage.setItem('email',res.data.email);
+                localStorage.setItem('membership',res.data.membership);
+                localStorage.setItem('role',res.data.role);
             }
             alert(res.data.msg);
             
