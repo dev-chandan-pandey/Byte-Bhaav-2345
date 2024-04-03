@@ -1,0 +1,22 @@
+.main-container{
+    margin: auto;
+    width: 85%;
+}
+.first-section{
+    margin-top: 100px;
+    
+}
+.first-section>:nth-child(2){
+    width: 500px;
+    height: 500px;
+}
+.heading{
+    font-size: 45px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+}
+span {
+    color: brown;
+}
