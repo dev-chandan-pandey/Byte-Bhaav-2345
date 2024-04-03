@@ -5,6 +5,7 @@ import axios from "axios";
 import SingleRecipe from "../components/SingleRecipe";
 import Fillter from "../components/Fillter";
 import SearchBar from "../components/SearchBar";
+import { Box, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 function Recipes() {
   const [data, setState] = useState([]);
   const [page, setPage] = useState(1);
@@ -63,6 +64,22 @@ function Recipes() {
 		  };
 		   fetchFood2(fillter)
 	 },[fillter])
+   if (data.length === 0) {
+		return (
+      <Box padding='6' boxShadow='lg' bg='white' mt={"100px"}>
+      <SkeletonCircle size='10' />
+      <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='2' />
+  
+      <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='2' />
+     
+      <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='2' />
+     
+      <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='2' />
+      
+      <SkeletonText mt='4' noOfLines={4} spacing='4' skeletonHeight='2' />
+    </Box>
+		);
+	}
   return (
     <div style={{marginTop:"100px"}} className="md:px-0 px-2 md:max-w-[80%] mx-auto flex flex-col">
 	<SearchBar setSearch={setSearch}/>

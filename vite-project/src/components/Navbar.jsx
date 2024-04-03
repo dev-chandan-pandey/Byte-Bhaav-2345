@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import UserDetail from '../pages/UserDetail';
 function Navbar() {
   const [sticky,setSticky] = useState(false);
+  const token = localStorage.getItem("token")||"";
+  const [tkn , setTkn]= useState(token);
+  console.log(token,"7 line")
   useEffect(()=>{
     const handleScroll = ()=>{
       if(window.scrollY > 0){
@@ -72,11 +75,11 @@ function Navbar() {
     </ul>
   </div>
   <div className='navbar-end space-x-3'>
-  <Link to={"/login"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</Link>
+  {!tkn&&<Link to={"/login"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</Link>}
     {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</a> */}
-    <Link to={"/signup"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</Link>
+   {!tkn&&<Link to={"/signup"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</Link>}
     {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</a> */}
-    <UserDetail/>
+   {tkn&&<UserDetail/>}
     </div>
   
   

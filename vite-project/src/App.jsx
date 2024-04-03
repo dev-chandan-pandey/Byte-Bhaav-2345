@@ -8,6 +8,7 @@ import Footer from "./components/Footer.jsx";
 import Login from "./pages/Login.jsx";
 import Contact from "./pages/Contact.jsx";
 import Signup from "./pages/SignUp.jsx";
+import RecipeDetail from "./components/RecipeDetail.jsx";
 import Posts from "./pages/Posts.jsx";
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route  path={"/recipes"} element={<Recipes/>}></Route>
         <Route exact path={"/login"} element={<Login/>}></Route>
         <Route exact path={"/signup"} element={<Signup/>}></Route>
+        <Route exact path={"/recipedetail/:id"} element={<RecipeDetail/>}></Route>
         <Route exact path="/posts" element={<Posts />}></Route>
       </Routes>
       <Footer />
@@ -28,3 +30,5 @@ function App() {
 }
 
 export default App;
+
+      
