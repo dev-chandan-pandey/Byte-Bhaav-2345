@@ -16,9 +16,9 @@ import { Link } from "react-router-dom";
 // _id:  "660679a32717cf11c5d65836"
 function SingleRecipe({ food }) {
   return (
-    <div className=" rounded-lg sm:border-r-[12px] my-5 bg-white border-red-600 mt-2 grid  md:flex gap-2 shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300">
+    <div className="rounded-lg sm:border-r-[12px] my-5 bg-white border-red-600 mt-2 grid  md:flex gap-2 shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover: duration-300">
       <div className="">
-        <Link to={`/recipe/${food._id}`}>
+        <Link  to ={`/recipedetail/${food._id}`} state={food}>
           <img
             className="md:w-[240px] rounded-l-lg w-full h-full object-cover"
             src={`${food.image}`}
