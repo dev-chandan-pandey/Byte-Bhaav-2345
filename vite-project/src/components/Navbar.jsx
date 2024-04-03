@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
+import UserDetail from '../pages/UserDetail';
 function Navbar() {
   const [sticky,setSticky] = useState(false);
   useEffect(()=>{
@@ -75,7 +76,8 @@ function Navbar() {
     {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</a> */}
     <Link to={"/signup"} className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</Link>
     {/* <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Register</a> */}
-  </div>
+    <UserDetail/>
+    </div>
   
   
 </div>
