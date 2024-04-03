@@ -23,7 +23,7 @@ const ViewPosts = () => {
 
     useEffect(() => {
         fetchAllPosts();
-    }, []);
+    }, [posts]);
 
     return (
         <Box margin={"auto"}>
