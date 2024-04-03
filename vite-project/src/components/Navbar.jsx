@@ -35,7 +35,7 @@ function Navbar() {
     </li>
   
     <li className="text-lg">
-    <Link to="/blog">Blog</Link>
+    <Link to="/posts">Users Posts</Link>
     </li>
     <li className="text-lg">
     <Link to="/about">About Us</Link>  
@@ -57,7 +57,7 @@ function Navbar() {
     <Link to="/recipes">Menu</Link>
     </li>
     <li className="text-lg">
-    <Link to="/shop">Shop</Link>
+    <Link to="/posts">Users Posts</Link>
     </li>
     <li className="text-lg">
     <Link to="/blog">Blog</Link>

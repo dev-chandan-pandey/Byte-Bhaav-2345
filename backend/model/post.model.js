@@ -6,10 +6,11 @@ const postSchema = mongoose.Schema(
 		title: String,
 		description: String,
 		type: String,
+		image: String,
 		ingredients: [
 			{
 				name: String,
-				quantity:String
+				quantity: String,
 			},
 		],
 		cookingTime: String,
