@@ -10,7 +10,7 @@ const Signup = () => {
 
     const handleSignup = async () => {
         try {
-            const res = await axios.post(`http://localhost:8080/users/register`, { username, email, pass, membership });
+            const res = await axios.post(`https://byte-bhaav-2345.onrender.com/users/register`, { username, email, pass, membership });
             alert(res.data.msg);
         } catch (error) {
             console.log(error);
