@@ -8,7 +8,7 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const res = await axios.post(`http://localhost:8080/users/login`, { email, pass });
+            const res = await axios.post(`https://byte-bhaav-2345.onrender.com/users/login`, { email, pass });
             if (res.data.token) {
                 localStorage.setItem('token', res.data.token);
                 localStorage.setItem('username',res.data.username);

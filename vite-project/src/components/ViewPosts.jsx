@@ -9,7 +9,7 @@ const ViewPosts = () => {
 
     const fetchAllPosts = async () => {
         try {
-            const res = await axios.get(`http://localhost:8080/posts/`, {
+            const res = await axios.get(`https://byte-bhaav-2345.onrender.com/posts/`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

@@ -56,7 +56,7 @@ const AddNewPost = () => {
     });
 
     try {
-      await axios.post('http://localhost:8080/posts/register', postData, {
+      await axios.post('https://byte-bhaav-2345.onrender.com/posts/register', postData, {
         headers: {
             Authorization:`Bearer ${token}`,
           'Content-Type': 'multipart/form-data'
