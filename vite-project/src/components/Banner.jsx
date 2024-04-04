@@ -23,7 +23,7 @@ function Banner() {
           
         </div>
         <div className="w-full md:w-1/2 bg-white" style={{backgroundColor:"white"}}>
-            <img src={banner} alt="" style={{backgroundColor:"white"}}/>
+            <img src="https://img.freepik.com/free-photo/delicious-healthy-oatmeal-with-figs-nuts-kiwi-seeds_2829-18240.jpg?w=740" alt="" style={{backgroundColor:"white"}}/>
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import crusted from "../assets/crustedChicken.jpg";
+import burger from "../assets/Burger.jpg"
 import "../css/Home.css";
 
 function Home() {
@@ -86,7 +87,7 @@ function Home() {
 
           {/* Second Dish */}
           <div className="second-section">
-            <img src={crusted} alt="Chicken and Apple Sandwich" className="crusted" />
+            <img src={burger} alt="Chicken and Apple Sandwich" className="crusted" />
 
             <div className="first-section-second">
               <h1>02._____</h1>
