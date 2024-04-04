@@ -6,7 +6,7 @@ function Contact() {
     <div className="contact-container">
       <div className="contact-first-section">
         <form className="max-w-sm max-w-96">
-          <h1 className="get-in-touch">Get In Touch</h1>
+          <h1 className="get-in-touch"><span>Get</span> In Touch</h1>
           <div>
             <label
               htmlFor="name-input"

@@ -18,5 +18,28 @@ p{
     font-size: 18px;
 }
 span {
-    color: brown;
+    color: #c70e18;
 }
+
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules for mobile devices here */
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+  }
+
+  /* For devices with a minimum width of 768 pixels and a maximum width of 1024 pixels (medium-sized screens) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Your CSS rules for medium screens here */
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
