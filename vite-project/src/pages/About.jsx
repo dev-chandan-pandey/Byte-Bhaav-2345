@@ -7,7 +7,7 @@ function About() {
         <div className="first-section">
           <div>
             <h1 className="heading">
-              <span>Welcome </span>to Delight Food
+              <span>Welcome </span>to Delight Dish
             </h1>
             <p>
               Welcome to DelightDish, your ultimate destination for culinary
@@ -63,8 +63,8 @@ function About() {
                     height="805"
                   />
                   <div>
-                    <h4 class="text-2xl">Hentoni Doe</h4>
-                    <span class="block text-sm text-gray-500">CEO-Founder</span>
+                    <h4 class="text-2xl"> Vishnuraj K R</h4>
+                    <span class="block text-sm text-gray-500">Full Stack Web Developer</span>
                   </div>
                 </div>
                 <div class="space-y-4 text-center">
@@ -77,9 +77,9 @@ function About() {
                     height="667"
                   />
                   <div>
-                    <h4 class="text-2xl">Jonathan Doe</h4>
+                    <h4 class="text-2xl">Chandan Pandey (TL)</h4>
                     <span class="block text-sm text-gray-500">
-                      Chief Technical Officer
+                      Full Stack Web Developer
                     </span>
                   </div>
                 </div>
@@ -93,9 +93,9 @@ function About() {
                     height="667"
                   />
                   <div>
-                    <h4 class="text-2xl">Anabelle Doe</h4>
+                    <h4 class="text-2xl">Khadim Khan</h4>
                     <span class="block text-sm text-gray-500">
-                      Chief Operations Officer
+                      Full Stack Web Developer
                     </span>
                   </div>
                 </div>

@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-50 ">
           {/* First Section */}
           <div>
-            <h1>Delight Dish</h1>
+            <h1 className='font-bold text-2xl'>DelightDish</h1>
             <p>Welcome to www.delightdish.com<br />This Website is owned and operated<br /> by Turmeric Vision Private Limited.</p>
             <h5 className="mb-2.5 font-bold text-neutral-800 dark:text-neutral-200 pt-5">
               Follow Us
@@ -130,8 +130,8 @@ function Footer() {
 
       {/* Copyright Section */}
       <div className="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-        © 2023 Copyright:
-        <a className="text-neutral-800 dark:text-neutral-400" href="https://tw-elements.com/">TW Elements</a>
+        © 2024 Copyright :
+        <a className="text-neutral-800 dark:text-neutral-400" href="https://tw-elements.com/"> All Right Reserved</a>
       </div>
     </footer>
   );
