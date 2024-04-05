@@ -12,44 +12,9 @@ Frontend: https://dist-nu-kohl.vercel.app/
 Backend: https://byte-bhaav-2345.onrender.com/
 
 ### Directory Structure
-RecipeGenius/
-│
-├── backend/
-│ ├── config/
-│ │ ├── database.js # MongoDB configuration
-│ │ └── jwt.js # JWT configuration
-│ ├── controllers/
-│ │ ├── authController.js # Authentication controller
-│ │ ├── recipeController.js # Recipe-related operations controller
-│ │ └── userController.js # User-related operations controller
-│ ├── middleware/
-│ │ └── authMiddleware.js # Authentication middleware
-│ ├── models/
-│ │ ├── recipeModel.js # Recipe schema
-│ │ └── userModel.js # User schema
-│ ├── routes/
-│ │ ├── authRoutes.js # Authentication routes
-│ │ ├── recipeRoutes.js # Recipe-related routes
-│ │ └── userRoutes.js # User-related routes
-│ ├── services/
-│ │ └── recommendationService.js # Recipe recommendation service
-│ ├── app.js # Express application setup
-│ └── server.js # Entry point for backend server
-│
-└── frontend/
-├── public/
-│ ├── index.html # HTML entry point
-│ └── ...
-├── src/
-│ ├── components/ # React components
-│ ├── containers/ # Container components
-│ ├── redux/ # Redux setup
-│ ├── services/ # API service functions
-│ ├── styles/ # CSS stylesheets
-│ ├── App.js # Main React component
-│ └── index.js # React DOM rendering
-└── package.json # Frontend dependencies and scripts
-
+recipe-Genious
+backend-
+frontend-
 
 ### Features
 ## List out the key features of your application.
