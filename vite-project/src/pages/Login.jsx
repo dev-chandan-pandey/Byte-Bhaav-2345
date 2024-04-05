@@ -1,8 +1,10 @@
 import { Box, Button, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom/dist/umd/react-router-dom.development";
 
 const Login = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
 
@@ -15,6 +17,8 @@ const Login = () => {
                 localStorage.setItem('email',res.data.email);
                 localStorage.setItem('membership',res.data.membership);
                 localStorage.setItem('role',res.data.role);
+                localStorage.setItem("isLoggedIn",true);
+navigate("/")
                 
             }
             alert(res.data.msg);

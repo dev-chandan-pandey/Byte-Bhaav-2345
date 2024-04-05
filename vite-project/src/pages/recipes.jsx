@@ -6,7 +6,10 @@ import SingleRecipe from "../components/SingleRecipe";
 import Fillter from "../components/Fillter";
 import SearchBar from "../components/SearchBar";
 import { Box, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom/dist/umd/react-router-dom.development";
 function Recipes() {
+  const isLoggedIn= localStorage.getItem("isLoggedIn");
+  const navigate = useNavigate()
   const [data, setState] = useState([]);
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
@@ -63,7 +66,10 @@ function Recipes() {
 			}
 		  };
 		   fetchFood2(fillter)
-	 },[fillter])
+	 },[fillter]);
+       if(!isLoggedIn){
+        navigate("/login")
+       }
    if (data.length === 0) {
 		return (
       <Box padding='6' boxShadow='lg' bg='white' mt={"100px"}>
